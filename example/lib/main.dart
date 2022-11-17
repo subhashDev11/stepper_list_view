@@ -1,47 +1,3 @@
-
-# StepperListView
-
-StepperListView is an widget that building the list ui with stepper widget.
-
-![](C:/Users/Bhardwaj/Downloads/steppr_list_view.gif)
-
-## Motivation
-Main motivation behind this package was one of my project feature is required a list UI that can include the information according date and circle avatar.
-## Authors
-
-- [@subhashDev11](https://github.com/subhashDev11)
-
-
-## Demo
-
-
-
-## Features
-
-- List item in stepper view
-- Stepper view for signle item
-- List item shorting
-- Much options to customize steps UI
-
-
-## Documentation
-
-
-
-
-## 🚀 About Me
-I'm a flutter developer...
-
-
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://subhashdev121.github.io/subhash/#/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subhashcs)
-[![medium](https://img.shields.io/badge/medium-000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@subhashchandrashukla)
-
-
-## Usage/Examples
-
-```dart
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:stepper_list_view/stepper_list_view.dart';
@@ -54,6 +10,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -76,22 +33,23 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-  final _stepperData = List.generate(10, (index) => StepperItemData(
-    id: '$index',
-    content: ({
-      'name': 'Subhash Chandra Shukla',
-      'occupation': 'Flutter Development',
-      'mobileNumber': '7318459902',
-      'email': 'subhashchandras7318@gmail.com',
-      'born_date': '12\nAug',
-      "contact_list": {
-        "LinkedIn": "https://www.linkedin.com/in/subhashcs/",
-        "Portfolio": "https://subhashdev121.github.io/subhash/#/",
-      }
-    }),
-    avatar: 'https://avatars.githubusercontent.com/u/70679949?v=4',
-  )).toList();
+  final _stepperData = List.generate(
+      10,
+      (index) => StepperItemData(
+            id: '$index',
+            content: ({
+              'name': 'Subhash Chandra Shukla',
+              'occupation': 'Flutter Development',
+              'mobileNumber': '7318459902',
+              'email': 'subhashchandras7318@gmail.com',
+              'born_date': '12\nAug',
+              "contact_list": {
+                "LinkedIn": "https://www.linkedin.com/in/subhashcs/",
+                "Portfolio": "https://subhashdev121.github.io/subhash/#/",
+              }
+            }),
+            avatar: 'https://avatars.githubusercontent.com/u/70679949?v=4',
+          )).toList();
 
   @override
   Widget build(BuildContext context) {
@@ -317,14 +275,3 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 }
-
-```
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
-![Logo](https://i.ibb.co/2szbbHF/code-xposer.png)
-
