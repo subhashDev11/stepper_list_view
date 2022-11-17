@@ -1,3 +1,9 @@
+/// AUTHOR INFO -
+/// Subhash Chandra Shukla
+/// Flutter Developer
+/// Contact .No - 7318459902
+/// Email-Id - subhashchandras7318@gmail.com
+
 library stepper_list_view;
 
 export 'src/stepper_item_data.dart';

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stepper_list_view/stepper_list_view.dart';
-import 'package:stepper_list_view/src/type_def.dart';
 
 class StepperListView extends StatelessWidget {
   const StepperListView({

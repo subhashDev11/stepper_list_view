@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stepper_list_view/src/type_def.dart';
 import 'package:stepper_list_view/stepper_list_view.dart';
 
 class StepperWidget<R, C> extends StatefulWidget {

@@ -14,7 +14,6 @@ Main motivation behind this package was one of my project feature is required a 
 
 ## Demo
 
-![steppr_list_view](https://user-images.githubusercontent.com/70679949/202535370-0298b44f-7fc4-4dcd-950f-94d79abed26e.gif)
 
 
 ## Features
@@ -26,6 +25,19 @@ Main motivation behind this package was one of my project feature is required a 
 
 
 ## Documentation
+
+
+
+
+## 🚀 About Me
+I'm a flutter developer...
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://subhashdev121.github.io/subhash/#/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subhashcs)
+[![medium](https://img.shields.io/badge/medium-000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@subhashchandrashukla)
+
 
 ## Usage/Examples
 
@@ -308,20 +320,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ```
 
-## 🚀 About Me
-I'm a flutter developer...
-
-
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://subhashdev121.github.io/subhash/#/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subhashcs)
-[![medium](https://img.shields.io/badge/medium-000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@subhashchandrashukla)
-
-![Logo](https://i.ibb.co/2szbbHF/code-xposer.png)
-
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+
+![Logo](https://i.ibb.co/2szbbHF/code-xposer.png)
 
