@@ -1,11 +1,11 @@
 name: stepper_list_view
 description: StepperListView is an widget that building the list ui with stepper widget.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/subhashDev11/stepper_list_view
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
-  flutter: '>=3.19.3'
+  flutter: '>=3.19.5'
 
 dependencies:
   flutter:
@@ -18,3 +18,9 @@ dev_dependencies:
   flutter_lints: ^3.0.2
 
 flutter:
+
+screenshots:
+  - description: 'Examples of Listing-1.'
+    path: example/screenshots/scr1.png
+  - description: 'Examples of Listing-2.'
+    path: example/screenshots/scr2.png
