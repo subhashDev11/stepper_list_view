@@ -181,18 +181,22 @@ class _MyHomePageState extends State<MyHomePage> {
                                 flex: 3,
                                 child: Text(
                                   'Linked-In',
-                                  style: theme.textTheme.caption,
+                                  style: theme.textTheme.bodySmall,
                                 ),
                               ),
                               Expanded(
                                 flex: 7,
                                 child: GestureDetector(
                                   onTap: () {
-                                    _launchURL(stepData.content['contact_list']['LinkedIn']);
+                                    _launchURL(stepData.content['contact_list']
+                                        ['LinkedIn']);
                                   },
                                   child: Text(
-                                    stepData.content['contact_list']['LinkedIn'] ?? '',
-                                    style: theme.textTheme.titleMedium?.copyWith(
+                                    stepData.content['contact_list']
+                                            ['LinkedIn'] ??
+                                        '',
+                                    style:
+                                        theme.textTheme.titleMedium?.copyWith(
                                       color: Colors.blue,
                                       decoration: TextDecoration.underline,
                                     ),
@@ -211,18 +215,22 @@ class _MyHomePageState extends State<MyHomePage> {
                                 flex: 3,
                                 child: Text(
                                   'Portfolio',
-                                  style: theme.textTheme.caption,
+                                  style: theme.textTheme.bodySmall,
                                 ),
                               ),
                               Expanded(
                                 flex: 7,
                                 child: GestureDetector(
                                   onTap: () {
-                                    _launchURL(stepData.content['contact_list']['Portfolio']);
+                                    _launchURL(stepData.content['contact_list']
+                                        ['Portfolio']);
                                   },
                                   child: Text(
-                                    stepData.content['contact_list']['Portfolio'] ?? '',
-                                    style: theme.textTheme.titleMedium?.copyWith(
+                                    stepData.content['contact_list']
+                                            ['Portfolio'] ??
+                                        '',
+                                    style:
+                                        theme.textTheme.titleMedium?.copyWith(
                                       color: Colors.blue,
                                       decoration: TextDecoration.underline,
                                     ),

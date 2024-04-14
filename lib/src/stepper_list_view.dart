@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:stepper_list_view/stepper_list_view.dart';
+import '../stepper_list_view.dart';
 
 class StepperListView extends StatelessWidget {
   const StepperListView({
-    Key? key,
+    super.key,
     required this.stepperData,
     required this.stepAvatar,
     this.avatarRadius,
@@ -18,7 +18,7 @@ class StepperListView extends StatelessWidget {
     this.addSemanticIndexes,
     this.reverse,
     this.showStepperInLast,
-  }) : super(key: key);
+  });
 
   final List<StepperItemData> stepperData;
   final StepperAvatarBuilder stepAvatar;
@@ -48,7 +48,9 @@ class StepperListView extends StatelessWidget {
       itemBuilder: (_, index) {
         return StepperWidget(
           stepperData[index],
-          isLast: (showStepperInLast ?? true) ? false : stepperData.last == stepperData[index],
+          isLast: (showStepperInLast ?? true)
+              ? false
+              : stepperData.last == stepperData[index],
           stepperWidgetBuilder: (_, data) {
             return stepWidget != null
                 ? PreferredSize(

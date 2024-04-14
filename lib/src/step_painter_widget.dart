@@ -3,18 +3,18 @@ import 'package:provider/provider.dart';
 import 'stepper_theme_data.dart';
 
 class StepPainterWidget extends StatelessWidget {
-  final PreferredSizeWidget stepperAvatar;
-  final Widget stepperContent;
-  final bool isLast;
-  final PreferredSizeWidget stepperWidget;
-
   const StepPainterWidget({
     required this.stepperAvatar,
     required this.stepperContent,
     required this.isLast,
-    Key? key,
     required this.stepperWidget,
-  }) : super(key: key);
+    super.key,
+  });
+
+  final PreferredSizeWidget stepperAvatar;
+  final Widget stepperContent;
+  final bool isLast;
+  final PreferredSizeWidget stepperWidget;
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +46,7 @@ class StepPainterWidget extends StatelessWidget {
                 ),
                 Expanded(
                   child: stepperContent,
-                )
+                ),
               ],
             ),
           ),
@@ -57,20 +57,26 @@ class StepPainterWidget extends StatelessWidget {
 }
 
 class RootPainter extends CustomPainter {
-  Size? avatar;
-  late Paint _paint;
-  Color? pathColor;
-  double? strokeWidth;
-  final TextDirection textDecoration;
-  final bool isLast;
-
-  RootPainter(this.avatar, this.pathColor, this.strokeWidth, this.textDecoration, this.isLast) {
+  RootPainter(
+      this.avatar,
+      this.pathColor,
+      this.strokeWidth,
+      this.textDecoration,
+      this.isLast,
+      ) {
     _paint = Paint()
       ..color = pathColor!
       ..style = PaintingStyle.stroke
       ..strokeWidth = strokeWidth!
       ..strokeCap = StrokeCap.round;
   }
+
+  Size? avatar;
+  late Paint _paint;
+  Color? pathColor;
+  double? strokeWidth;
+  final TextDirection textDecoration;
+  final bool isLast;
 
   @override
   void paint(Canvas canvas, Size size) {
