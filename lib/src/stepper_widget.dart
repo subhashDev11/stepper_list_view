@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stepper_list_view/stepper_list_view.dart';
+import '../stepper_list_view.dart';
 
 class StepperWidget<R, C> extends StatefulWidget {
+  const StepperWidget(
+    this.root, {
+    this.stepperThemeData,
+    required this.stepperAvatarBuilder,
+    required this.stepperContentBuilder,
+    required this.isLast,
+    super.key,
+    required this.stepperWidgetBuilder,
+  });
+
   final R root;
 
   final StepperAvatarBuilder<R> stepperAvatarBuilder;
@@ -12,21 +22,11 @@ class StepperWidget<R, C> extends StatefulWidget {
   final StepperThemeData? stepperThemeData;
   final bool isLast;
 
-  const StepperWidget(
-    this.root, {
-    this.stepperThemeData,
-    required this.stepperAvatarBuilder,
-    required this.stepperContentBuilder,
-    required this.isLast,
-    Key? key,
-    required this.stepperWidgetBuilder,
-  }) : super(key: key);
-
   @override
-  _StepperWidgetState<R, C> createState() => _StepperWidgetState<R, C>();
+  StepperWidgetState<R, C> createState() => StepperWidgetState<R, C>();
 }
 
-class _StepperWidgetState<R, C> extends State<StepperWidget<R, C>> {
+class StepperWidgetState<R, C> extends State<StepperWidget<R, C>> {
   @override
   Widget build(BuildContext context) {
     final PreferredSize stepperAvatar = widget.stepperAvatarBuilder(
