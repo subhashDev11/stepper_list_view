@@ -22,7 +22,9 @@ class StepPainterWidget extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(padding: const EdgeInsets.only(top: 5, right: 5), child: stepperWidget),
+        Padding(
+            padding: const EdgeInsets.only(top: 5, right: 5),
+            child: stepperWidget),
         Expanded(
           child: CustomPaint(
             painter: RootPainter(
@@ -116,7 +118,8 @@ class RootPainter extends CustomPainter {
 
     // Draw remaining dash if any
     if (remainder > 0 && remainder <= dashLength) {
-      canvas.drawLine(Offset(x, currentY), Offset(x, currentY + remainder), _paint);
+      canvas.drawLine(
+          Offset(x, currentY), Offset(x, currentY + remainder), _paint);
     }
   }
 

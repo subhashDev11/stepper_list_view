@@ -1,8 +1,14 @@
 ## 0.0.1
 
-* TODO:  Initial release.
+* Initial release.
 
 ## 0.0.2
 
-* TODO:  Flutter SDK version upgrade.
+* Flutter SDK version upgrade.
 
+## 1.0.0
+
+### Added dashed line support to StepperListView
+- Add isDashed, dashLength, and dashGap properties to StepperThemeData
+- Implement dashed line drawing in RootPainter
+- Maintain backward compatibility (defaults to solid lines)

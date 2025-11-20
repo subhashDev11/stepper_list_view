@@ -35,21 +35,21 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final _stepperData = List.generate(
       10,
-          (index) => StepperItemData(
-        id: '$index',
-        content: ({
-          'name': 'Subhash Chandra Shukla',
-          'occupation': 'Flutter Development',
-          'mobileNumber': '7318459902',
-          'email': 'subhashchandras7318@gmail.com',
-          'born_date': '12\nAug',
-          "contact_list": {
-            "LinkedIn": "https://www.linkedin.com/in/subhashcs/",
-            "Portfolio": "https://subhashdev121.github.io/subhash/#/",
-          }
-        }),
-        avatar: 'https://avatars.githubusercontent.com/u/70679949?v=4',
-      )).toList();
+      (index) => StepperItemData(
+            id: '$index',
+            content: ({
+              'name': 'Subhash Chandra Shukla',
+              'occupation': 'Flutter Development',
+              'mobileNumber': '7318459902',
+              'email': 'subhashchandras7318@gmail.com',
+              'born_date': '12\nAug',
+              "contact_list": {
+                "LinkedIn": "https://www.linkedin.com/in/subhashcs/",
+                "Portfolio": "https://subhashdev121.github.io/subhash/#/",
+              }
+            }),
+            avatar: 'https://avatars.githubusercontent.com/u/70679949?v=4',
+          )).toList();
 
   @override
   Widget build(BuildContext context) {
@@ -190,14 +190,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 child: GestureDetector(
                                   onTap: () {
                                     _launchURL(stepData.content['contact_list']
-                                    ['LinkedIn']);
+                                        ['LinkedIn']);
                                   },
                                   child: Text(
                                     stepData.content['contact_list']
-                                    ['LinkedIn'] ??
+                                            ['LinkedIn'] ??
                                         '',
                                     style:
-                                    theme.textTheme.titleMedium?.copyWith(
+                                        theme.textTheme.titleMedium?.copyWith(
                                       color: Colors.blue,
                                       decoration: TextDecoration.underline,
                                     ),
@@ -224,14 +224,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 child: GestureDetector(
                                   onTap: () {
                                     _launchURL(stepData.content['contact_list']
-                                    ['Portfolio']);
+                                        ['Portfolio']);
                                   },
                                   child: Text(
                                     stepData.content['contact_list']
-                                    ['Portfolio'] ??
+                                            ['Portfolio'] ??
                                         '',
                                     style:
-                                    theme.textTheme.titleMedium?.copyWith(
+                                        theme.textTheme.titleMedium?.copyWith(
                                       color: Colors.blue,
                                       decoration: TextDecoration.underline,
                                     ),
@@ -284,4 +284,3 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 }
-
