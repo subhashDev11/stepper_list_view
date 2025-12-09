@@ -1,31 +1,67 @@
 
 # StepperListView
 
-StepperListView is an widget that building the list ui with stepper widget.
+A customizable Flutter widget for building beautiful stepper-based list UIs such as timelines, activity histories, event logs, and more.
 
 ![](C:/Users/Bhardwaj/Downloads/steppr_list_view.gif)
 
-## Motivation
-Main motivation behind this package was one of my project feature is required a list UI that can include the information according date and circle avatar.
-## Authors
+-------
 
-- [@subhashDev11](https://github.com/subhashDev11)
+## Installation
 
+Add to your `pubspec.yaml`:
 
-## Demo
+```yaml
+dependencies:
+  stepper_list_view: <latest_version>
+```  
 
-![steppr_list_view](https://user-images.githubusercontent.com/70679949/202535370-0298b44f-7fc4-4dcd-950f-94d79abed26e.gif)
-
+-------
 
 ## Features
 
-- List item in stepper view
-- Stepper view for signle item
-- List item shorting
-- Much options to customize steps UI
+- ✔ Stepper-style list items
+- ✔ Highly customizable UI
+- ✔ Custom avatar builder
+- ✔ Custom step label builder
+- ✔ Custom content builder
+- ✔ Optional stepper line on last item
+- ✔ Supports list sorting
+- ✔ Smooth physics support
+- ✔ Custom dashed or solid line
+- ✔ Easy integration
 
-
+-------
 ## Documentation
+
+| **Component** | **Description** |
+| --- | --- |
+| **StepperListView** | Main widget that renders the entire stepper UI |
+| **StepperItemData** | Data model for each list item |
+| **StepperThemeData** | Customization for stepper line and visuals |
+| **RootPainter** | Internal painter that draws the connecting line |
+
+-------
+## Customize options
+### StepperThemeData
+
+| Property | Description |
+| --- | --- |
+| `lineColor` | Color of the line connecting steps |
+| `lineWidth` | Thickness of the line |
+| `dashLength` | Dash segment length (for dashed lines) |
+| `dashGap` | Gap between dashes |
+
+### Builder Options
+
+| Callback | Purpose |
+| --- | --- |
+| `stepAvatar` | Builds avatar or step icon |
+| `stepWidget` | Builds the label beside the avatar |
+| `stepContentWidget` | Builds the main content area |
+
+
+-------
 
 ## Usage/Examples
 
@@ -308,19 +344,39 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ```
 
-## 🚀 About Me
-I'm a flutter developer...
+-------
 
+## Motivation
+
+During development of one of my apps, I needed a highly customizable stepper-style list layout that could:
+
+Display a date or time label
+
+Show a circle avatar or custom step widget
+
+Display rich content beside each step
+
+Since Flutter doesn’t provide such a widget out of the box, StepperListView was created.
+
+-------
+
+## Demo
+
+![steppr_list_view](https://user-images.githubusercontent.com/70679949/202535370-0298b44f-7fc4-4dcd-950f-94d79abed26e.gif)
+
+-------
+
+## 🚀 About Me
+I’m a Flutter Developer passionate about reusable UI components and designing elegant UI systems.
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://subhashdev121.github.io/subhash/#/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subhashcs)
 [![medium](https://img.shields.io/badge/medium-000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@subhashchandrashukla)
 
-![Logo](https://i.ibb.co/2szbbHF/code-xposer.png)
-
+-------
 
 ## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the MIT License.
+See the LICENSE file for full details.
 

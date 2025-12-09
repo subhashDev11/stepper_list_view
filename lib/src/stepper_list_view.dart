@@ -51,22 +51,22 @@ class StepperListView extends StatelessWidget {
           isLast: (showStepperInLast ?? true)
               ? false
               : stepperData.last == stepperData[index],
-          stepperWidgetBuilder: (_, data) {
+          stepperWidgetBuilder: (ctx, data) {
             return stepWidget != null
                 ? PreferredSize(
                     preferredSize: stepSize ?? const Size.fromWidth(20),
-                    child: stepWidget!(_, data),
+                    child: stepWidget!(ctx, data),
                   )
                 : const PreferredSize(
                     preferredSize: Size.zero,
                     child: SizedBox(),
                   );
           },
-          stepperAvatarBuilder: (_, data) {
-            return stepAvatar(_, data);
+          stepperAvatarBuilder: (ctx, data) {
+            return stepAvatar(ctx, data);
           },
-          stepperContentBuilder: (_, data) {
-            return stepContentWidget(_, data);
+          stepperContentBuilder: (ctx, data) {
+            return stepContentWidget(ctx, data);
           },
           stepperThemeData: stepperThemeData,
         );

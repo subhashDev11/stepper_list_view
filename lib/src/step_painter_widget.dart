@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'stepper_theme_data.dart';
 
 class StepPainterWidget extends StatelessWidget {
@@ -23,8 +22,9 @@ class StepPainterWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-            padding: const EdgeInsets.only(top: 5, right: 5),
-            child: stepperWidget),
+          padding: const EdgeInsets.only(top: 5, right: 5),
+          child: stepperWidget,
+        ),
         Expanded(
           child: CustomPaint(
             painter: RootPainter(
@@ -119,7 +119,10 @@ class RootPainter extends CustomPainter {
     // Draw remaining dash if any
     if (remainder > 0 && remainder <= dashLength) {
       canvas.drawLine(
-          Offset(x, currentY), Offset(x, currentY + remainder), _paint);
+        Offset(x, currentY),
+        Offset(x, currentY + remainder),
+        _paint,
+      );
     }
   }
 

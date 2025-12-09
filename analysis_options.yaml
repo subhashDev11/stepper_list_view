@@ -4,7 +4,7 @@ include: package:flutter_lints/flutter.yaml
 # https://dart.dev/guides/language/analysis-options
 linter:
   rules:
-    public_member_api_docs: false
+    public_member_api_docs: true
     prefer_const_constructors: true
     require_trailing_commas: true
     cast_nullable_to_non_nullable: true

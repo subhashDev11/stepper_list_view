@@ -12,3 +12,10 @@
 - Add isDashed, dashLength, and dashGap properties to StepperThemeData
 - Implement dashed line drawing in RootPainter
 - Maintain backward compatibility (defaults to solid lines)
+
+## 1.0.1
+
+### Document update & lint issue fixes
+- Lint issue fixes
+- ReadMe doc update
+- Code formating
